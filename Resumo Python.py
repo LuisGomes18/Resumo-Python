@@ -27,7 +27,7 @@ if perg0 == total:
 else:
     errou()
 
-total = 0
+total = 0 #?Resetando as variaveis para não bugar
 n1 = 0
 n2= 0
 n1 = int(random.uniform(10, 99))
