@@ -1,22 +1,23 @@
-# Resunmo feito por Luís Gomes
-# Este resumo server para relembrar de alguma coisa.
-#? Import dos modulos usados
+# Resumo feito por Luís Gomes
+#Este resumo server para relembrar de alguma coisa.
+
+#* Import dos modulos usados
 import random
 
- #? Para definir as def's
+ #* Para definir as def's
 def acertou():
   print("Acertas-te \n")
 def errou():
   print("Erras-te \n")
 
 
-#? Apresentação com a pessoa
+#* Apresentação com a pessoa
 nome = input("Qual seu nome? ") 
 print(f'Seja bem-vindo {nome} muito gosto em te conheçer')
 print('Bora começar por maténatica \n')
 
 score = 0
-#? Perguntas de soma (básico)
+#* Perguntas de soma (básico)
 n1 = int(random.uniform(0, 9))
 n2 = int(random.uniform(0, 9))
 total = n1 + n2
@@ -27,7 +28,7 @@ if perg0 == total:
 else:
     errou()
 
-total = 0 #?Resetando as variaveis para não bugar
+total = 0 #* Resetando as variaveis para não bugar
 n1 = 0
 n2= 0
 n1 = int(random.uniform(10, 99))
@@ -67,7 +68,7 @@ else:
     errou()
 
 
-#? Perguntas da subtrações
+#* Perguntas da subtrações
 print('\n Perguntas de subtração')
 total = 0
 n1 = 0
@@ -121,8 +122,17 @@ if perg00 == total:
 else:
     errou()     
 
+#* Desafio de descobrir o numero
+numrand = random.uniform(0, 10)
+numpess = int(input('Adivinhe o numero que foi gerando entre 0 e 10: '))
+if numpess ==  numrand:
+    acertou()
+else:
+    errou()    
+
+#* Pontuação total do utilizador
 print('\n****************************  SCORE  ******************************************')
-print('                                                                                ')
-print(f'                    O total da sua pontuação é {score}                         ')
-print('                                                                                ')
-print('*******************************************************************************')      
+print('                                                                                 ')
+print(f'                    O total da sua pontuação é {score}                          ')
+print('                                                                                 ')
+print('********************************************************************************')      
